@@ -1,4 +1,3 @@
-
 <!-- Design your own home page under the department system. Page layout is up to each individual; however, information to appear on the page should include:
 a. Title
 b. Your name (nickname)
@@ -91,9 +90,10 @@ Others advanced HTML features such as sounds, animation, etc. are optional.
  }
 
  p::first-letter{
- font-size:25px;
+ font-size:30px;
  }
 
+/*  education */
  div.polaroid {
   margin: 15px;
   border: 10px solid rgb(255, 255, 255);
@@ -101,10 +101,9 @@ Others advanced HTML features such as sounds, animation, etc. are optional.
   float: left;
   width: 550px;
   box-shadow: 5px 5px 10px rgba(144, 144, 144, 0.534);
-  object-fit: cover;
 }
 
-div.polaroid :hover {
+ div.polaroid :hover {
     opacity: 0.9;
 }
 
@@ -116,9 +115,22 @@ div.polaroid :hover {
  div.desc {
   padding: 40px;
   text-align: center;
+  font-size: 20px;
 }
 
- section-home {
+/* hobby */
+table, td {
+  border: 0;
+  width: 1200px;
+  text-align: center;
+}
+
+table, td {
+  border: 1;
+}
+
+section-home {
+    font-size: 20px;
     display: flex;
     min-height: 100%;
     border: 10px solid white;
@@ -131,6 +143,7 @@ div.polaroid :hover {
     display: flex;
     min-height: 100%;
     border: 10px solid white;
+    padding: 20px;
     font-family: Perpetua, serif;
     background-color: white;
     background-attachment: fixed; 
@@ -138,23 +151,27 @@ div.polaroid :hover {
 
  #home {
     text-align: center;
-    background-size: auto;
+    background-size: cover;
     padding: 20px;
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.3)), url('IMG_8148.jpeg');
+    background-image: linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.75)), url('IMG_8148.jpeg');
  }
-  
+
  #hobby {
-    background-size: auto;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    background-size: cover;
     padding: 20px;
-    background-image: linear-gradient(rgba(255, 192, 203,0.75),rgba(255,255,255,0.3));
+    background-image: linear-gradient(rgba(244,194,194,0.2),rgba(255,255,255,0.75)); */
+    background-attachment: fixed; 
  }
- 
+
  footer {
     text-align: Center;
     padding: 50px;
     font-family: Perpetua, serif;
     Color: Black;
-    font-size:12px;
+    font-size:20px;
  }
  
  </style>
@@ -163,6 +180,7 @@ div.polaroid :hover {
     <head>
        <title>Celine's website</title>
        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
      
     <body>
@@ -183,20 +201,29 @@ div.polaroid :hover {
     <section-home id="home">
         <div>
         <br><br>
-        <h>About Me</h><br>
-        <img src="IMG_3040.JPG" class="profilepic">
+        <h>About Me</h><br><br>
+        <img src="IMG_3040.jpg" class="profilepic">
         <p>Welcome to my website!&#128513 <br> I am taking a programming course with course code COMP5322 in Hong Kong Polytechnic University now.<br> This website is one of the projects in this course and it requires us to demonstrate HTML coding skills.<br> I'm going to introduce myself here and share my photos with you.</p>
         <p>Zodiac Sign: &#9811</p>
         <p>Occupation: Field Service Engineer &#128295</p>
-        <p>Hobbies: <br>Photography &#128247  <br>Yoga &#129496  <br>Travel &#9973 <br>Gourmet 🍰</p>
+        <p>Hobbies: <br>Photography &#128247  <br>Yoga &#129496  <br>Travel &#9973 <br>Gourmet 🍰 <br>Video Gaming 🎮 <br></p>
         </div><br>      
     </section-home>
              
 
     <section-education id="education">
         <div>
-        <h>Education Background &#127891</h><br>
-
+        <h>Education Background &#127891</h><br><br>
+        <div class="polaroid">
+            <a target="_blank" href="IMG_3107.jpg">
+              <img src="IMG_3107.jpg" alt="Cherry blossom at NA College, CUHK">
+            </a>
+            <h style="font-size: 20px;"><br>&nbsp;<i>Cherry blossom at NA college, Feb 2015</i></h>
+            <div class="desc"><b>The Chinese University of Hong Kong (CUHK)</b><br><br><i>Bachelor of Biomedical Engineer</i> (2014 - 2019)</div>
+            <a target="_blank" href="https://www.cuhk.edu.hk/english/index.html"> 
+              <img src="cuhk-logo.jpg" alt="CUHK logo"></a>
+          </div>
+          
         <div class="polaroid">
             <a target="_blank" href="polyu.jpeg">
               <img src="polyu.jpeg" alt="Tang Ping Yuan Square at PolyU">
@@ -204,27 +231,39 @@ div.polaroid :hover {
             <h style="font-size: 20px;"><br>&nbsp;<i>Tang Ping Yuan Square at PolyU, Aug 2022</i></h>
             <div class="desc"><b>Hong Kong Polytechnic University (HKPolyU)</b><br><br><i>Master of Science in Health Informatics</i> (2021 - Current)</div>
             <a target="_blank" href="https://www.polyu.edu.hk/"> 
-              <img src="polyu-logo.png" alt="HKPolyU logo"><br>
+              <img src="polyu-logo.png" alt="HKPolyU logo"></a>
           </div>
         </div><br>
-         
-        <div class="polaroid">
-            <a target="_blank" href="IMG_3107.jpg">
-              <img src="IMG_3107.JPG" alt="Cherry blossom at NA College, CUHK">
-            </a>
-            <h style="font-size: 20px;"><br>&nbsp;<i>Cherry blossom at NA college, Feb, 2015</i></h>
-            <div class="desc"><b>The Chinese University of Hong Kong (CUHK)</b><br><br><i>Bachelor of Biomedical Engineer</i> (2014 - 2019)</div>
-            <a target="_blank" href="https://www.cuhk.edu.hk/english/index.html"> 
-              <img src="cuhk-logo.JPG" alt="CUHK logo">
-         </div>
-                   
          </div><br><br>
     </section-education>
 
     <section id="hobby">
-        <h style="text-align: center;">Education Background &#127891</h><br>
-    
-    </section>
+      <h>Hobby &#9917</h><br>
+      <table>
+         <tr>
+            <td><img src="IMG_3088.jpg" alt="Aerial Yoga" style="width: 500px; height: 450px; object-fit: cover; border: 10px solid white; box-shadow: 5px 5px 10px rgba(144, 144, 144, 0.534);"></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>I've been learning and practising aerial yoga for around 2 years. <br>I usually go to yoga class after work to relax both my body and mind.<br><br>Aerial yoga improved my strength, flexibility, body awareness and muscle control when exercising.<br> </p></td>
+            
+         </tr>
+
+         <tr>
+            <td><p>I bought my very first single len camera when I was 18 years old. But it was stolen when I was travelling in Paris 4 years ago😭. <br><br>Now I am using Sony RX100 digital camera, it is light in weight and more portable than single len camera. I can bring it to everywhere without burden.<br><br> Please click "📸 Gallery" in header if you wish to see more photos I took before.</p></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><img src="IMG_8012.jpeg" alt="Aerial Yoga" style="width: 500px; height: 450px; object-fit: cover; border: 10px solid white; box-shadow: 5px 5px 10px rgba(144, 144, 144, 0.534);"></td>
+         </tr>
+
+         <tr>
+            <td> <iframe width=500px height=350px src="https://www.youtube.com/embed/xJEREIMmT68"> </iframe> </td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td><p>I am also a video game and PC game lover. After leaving school, I play games less often than before. Still, I spend much time watching international e-sport competitions.<br><br> Which team do you support?  </p> </td>
+         </tr>
+      </table>
+
+    </section><br>
     </main>
          
   <footer>
